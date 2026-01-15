@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+table {
+    border: 3px solid #DDD;
+}
+table th {
+    background-color: rgb(160, 160, 160);
+}
+table th,
+table td {
+    text-align: center;
+}
+table tr:nth-child(odd) {
+    background-color: green;
+}

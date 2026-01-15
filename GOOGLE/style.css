@@ -1,0 +1,122 @@
+:root {
+    --white-one: #FFF;
+    --white-two: #DDD;
+    --font-gray: #99c3ff;
+    --background-gray: #e8e8e8;
+    --background-black: #757575;
+    --background-black-two: #1e1f1f;
+    --background-black-three: #94979e;
+    --background-black-four: #151515;
+}
+* {
+    margin:0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    background-color: var(--background-black-two);
+    width: 100%;
+    height: 50px;
+}
+header .container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px;
+}
+header .container a {
+    margin: 15px 0 0 15px;
+    text-decoration: none;
+    color: var(--white-one);
+    font-size: 14px;
+}
+header .container a:hover {
+    border-bottom: 1px solid var(--white-one);
+    transition: 0.1s;
+}
+header .container img {
+    margin: 10px 0 0 15px;
+    cursor: pointer;
+}
+main {
+    background-color: var(--background-black-two);
+    width: 100%;
+    height: 475px;
+}
+main .container-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .container-two img {
+    width: 200px;
+    height: 64px;
+    margin: 20px 0;
+}
+main .container-two input {
+    border-radius: 20px;
+    border: none;
+    width: 535px;
+    height: 50px;
+    background-color: var(--background-black);
+    margin-bottom: 10px;
+}
+main .container-two input:hover {
+    background-color: var(--background-black-three);
+}
+main .container-three {
+    display: flex;
+    justify-content: center;
+}
+main .container-three .button-1,
+main .container-three .button-2 {
+    cursor: pointer;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--white-one);
+    background-color: var(--background-black);
+}
+main .container-three .button-1:hover,
+main .container-three .button-2:hover {
+    border: 1px solid var(--background-black-three);
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--background-black-four);
+}
+footer .container-four {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+}
+footer .container-four p {
+    margin: 10px;
+    text-decoration: none;
+    color: var(--white-one);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+footer .container-five {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .first-block,
+footer .second-block {
+    display: flex;
+}
+footer .first-block a,
+footer .second-block a {
+    text-decoration: none;
+    color: var(--white-one);
+    font-size: 16px;
+    margin-right: 15px;
+}
+footer .first-block a:hover,
+footer .second-block a:hover {
+    border-bottom: 1px solid var(--white-one);
+    transition: 0.1s;
+}

@@ -1,0 +1,99 @@
+:root {
+    --white-one: #FFF;
+    --white-two: #DDD;
+    --green: #069450;
+    --blue-default: #0000FF;
+    --blue-google: #1d1dd5;
+    --background-gray: #e8e8e8;
+    --background-black: #757575;
+    --background-black-two: #1e1f1f;
+    --background-black-three: #94979e;
+    --background-black-four: #151515;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    height: 90px;
+}
+header .block-1,
+header .block-2 {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+header .block-1 img {
+    width: 100px;
+    height: 32px;
+}
+header .block-1 input {
+    width: 800px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid var(--background-black-four);
+    margin-left: 20px;
+}
+header .block-2 figure {
+    margin-left: 20px;
+}
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+main .container-two {
+    width: 80%;
+    height: auto;
+    margin-left: 136px;
+}
+main .option {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+}
+main .option a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: var(--background-black);
+}
+main .option a:hover {
+    margin-right: 50px;
+    text-decoration: none;
+    color: var(--background-black-four);
+    transition: 0.1s;
+}
+main .option #special {
+    color: var(--blue-default);
+    border-bottom: 3px solid var(--blue-default);
+}
+main .note {
+    margin: 20px 0;
+    font-size: 14px;
+    color: var(--background-black)
+}
+main .results {
+    margin: 30px 0 20px 0;
+    width: 70%;
+}
+main .results h3 {
+    color: var(--blue-google);
+    font-weight: 500;
+}
+main .results a {
+    color: var(--green);
+}
+main .results p {
+    font-size: 14px;
+}
