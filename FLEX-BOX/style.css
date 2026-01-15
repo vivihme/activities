@@ -1,0 +1,25 @@
+:root {
+    --brown: #27272a;
+    --purple: #6366f1;
+    --blue: #38bdf8;
+}
+body {
+    background-color: var(--brown);
+}
+.container {
+    display: flex;
+    background-color: var(--purple);
+    gap: 10px;
+    height: 600px;
+    flex-wrap: wrap;
+/*    justify-content: center; /* EIXO X */
+    align-items: center; /* EIXO Y */
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: var(--blue);
+}
+.item-3 {
+    flex-grow: 1;
+}

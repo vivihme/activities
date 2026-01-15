@@ -1,0 +1,136 @@
+/* FONT CABIN IMPORTATION */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+    --black-one: #331f19;
+    --white-one: #f4f0ea;
+    --white-two: #cbbba7;
+    --green-one: #798252;
+    --green-two: #ccd595;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+body {
+    background-color: var(--white-one);
+    color: var(--green-one);
+    font-weight: 700;
+}
+header {
+    padding: 2rem;
+    background-color: var(--black-one);
+    text-align: center;
+    font-size: 2rem;
+}
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+h2 {
+    color: var(--black-one);
+    font-size: 1.3rem;
+}
+input[type="radio"], input[type="checkbox"] {
+    accent-color: var(--green-two);
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--green-two);
+    border-radius: 7px;
+    background-color: transparent;
+}
+input::placeholder {
+    color: var(--white-two);
+}
+select {
+    cursor: pointer;
+    background-color: var(--green-two);
+    color: var(--black-one);
+    border-radius: 7px;
+    border: none;
+}
+img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 7px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    background-color: var(--green-two);
+    color: var(--black-one);
+    padding: 0.5rem;
+}
+td {
+    color: var(--black-one);
+    padding: 0.5rem;
+    text-align: center;
+}
+tfoot td {
+    background-color: var(--black-one);
+    color: var(--white-one);
+}
+details {
+    background-color: var(--green-two);
+    border-radius: 7px;
+    padding: 1rem;
+}
+summary {
+    color: var(--black-one);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+ol {
+    margin-left: 0.5rem;
+}
+ol li {
+    padding: 0.2rem;
+}
+fieldset {
+    border: 2px solid var(--green-two);
+    border-radius: 7px;
+    padding: 1rem;
+}
+legend {
+    color: var(--black-one);
+    padding: 0 0.5rem;
+}
+textarea {
+    background-color: transparent;
+    border-radius: 7px;
+    border: 2px solid var(--green-two);
+}
+button {
+    background-color: var(--green-two);
+    border: none;
+    padding: 0.5rem;
+    color: var(--black-one);
+    border-radius: 7px;
+    cursor: pointer;
+}
+footer {
+    background-color: var(--black-one);
+    padding: 1.5rem;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: var(--green-two);
+
+}
+.footer-p {
+    color: var(--white-one);
+
+}
