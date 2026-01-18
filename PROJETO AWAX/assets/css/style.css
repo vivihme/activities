@@ -2,6 +2,7 @@
     --black: #000;
     --black-transparent: rgba(0, 0, 0, 0.8);
     --black-transparent-two: rgba(0, 0, 0, 0.5);
+    --black-transparent-three: rgba(0,0,0, 0.9);
     --black-shadow: #333;
     --black-middle: #555;
     --orange: #B28756;
@@ -41,6 +42,9 @@ header {
     height: 80px;
     background-color: var(--orange);
     border-radius: 40px;
+}
+.menu-opener {
+    display: none;
 }
 .menu {
     flex: 1;
@@ -635,4 +639,241 @@ CSS DE ÁREAS ESPECÍFICAS
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.default-adress-info {
+    background-image: url('../images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+.default-adress-info-more {
+    background-color: var(--gray-three);
+    color: var(--white);
+    width: 40%;
+    height: 40%;
+    padding: 5px 20px;
+    margin-left: 50px;
+}
+.default-adress-info-more-1,
+.default-adress-info-more-2,
+.default-adress-info-more-3,
+.default-adress-info-more-4,
+.default-adress-info-more-5 {
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.default-adress-info-more-1 img,
+.default-adress-info-more-2 img,
+.default-adress-info-more-3 img,
+.default-adress-info-more-4 img,
+.default-adress-info-more-5 img {
+    padding: 5px;
+    width: 30px;
+    height: 278x;
+}
+.default-adress-info-more-1 p,
+.default-adress-info-more-2 p,
+.default-adress-info-more-3 p,
+.default-adress-info-more-4 p,
+.default-adress-info-more-5 p {
+    font-size: 12px;
+}
+.default-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 0 50px;
+}
+.default-final-first {
+    display: flex;
+    flex-direction: column;
+    gap: 80px 0;
+}
+.default-final-first-logo {
+    display: flex;
+    gap: 20px;
+}
+.default-final-first-logo img {
+    width: 13px;
+    height: 14px;
+}
+.default-final-first-logo #link-yellow {
+    background-color: #B28756;
+}
+.default-final-first-awax p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+.default-final-two {
+    margin: auto;
+}
+.default-final-two p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.default-final-three {
+    background-color: var(--black-middle);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px 60px;
+}
+.default-final-three p {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid var(--white-two);
+}
+@media (min-width: 450px) and (max-width: 800px) {
+    .logo {
+        margin-left: 30px;
+    }
+    .menu-opener {
+        display: block;
+        width: 40px;
+        margin-right: 30px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: var(--black-transparent-three);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+    .menu li.active #link-active {
+        border: 0;
+        color: var(--orange);
+    }
+    .section-aboutUs {
+        flex-direction: column;
+    }
+    .section-aboutUs--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-aboutUs--right {
+        width: auto;
+    }
+    .default-services {
+        flex-wrap: wrap;
+    }
+    .default-services-iten {
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .default-services-iten:first-child {
+        border-left: 0;
+    }
+    .default-team {
+        max-width: 290px;
+    }
+    .default-adress-info {
+        width: auto;
+    }
+}
+@media (max-width: 450px) {
+    .logo {
+        margin-left: 30px;
+    }
+    .menu-opener {
+        display: block;
+        width: 40px;
+        margin-right: 30px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: var(--black-transparent-three);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
+        border: 0;
+    }
+    .menu li.active #link-active {
+        border: 0;
+        color: var(--orange);
+    }
+    .banner .slidearea h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .banner .slidearea h2 {
+        font-size: 17px;
+    }
+    .section-aboutUs {
+        flex-direction: column;
+    }
+    .section-aboutUs--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-aboutUs--right {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-aboutUs--right figure img {
+        width: 100%;
+    }
+    .default-services {
+        flex-wrap: wrap;
+    }
+    .default-services-iten {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .default-services-iten:first-child {
+        border-left: 0;
+    }
+    .default-team {
+        max-width: 290px;
+    }
+    .default-projects--filters ul {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .default-projects--photos {
+        width: 320px;
+    }
+    .default-projects--photo-area {
+        width: 300px;
+        height: 190px;
+    }
+    .default-adress-info {
+        width: auto;
+    }
 }
