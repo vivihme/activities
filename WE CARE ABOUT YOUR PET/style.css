@@ -1,0 +1,118 @@
+:root {
+    --white: #FFF;
+    --gray-one: #989D9C;
+    --gray-two: #848484;
+    --gray-three: #515151;
+    --violet: #665AE1;
+    --green: #ADFF00;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+header {
+    margin: 30px 0 20px 80px;
+}
+header nav a,
+header nav button {
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--gray-three);
+    text-transform: uppercase;
+    margin: 0 10px;
+    border: none;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+header nav button {
+    padding: 5px 15px;
+    background-color: var(--violet);
+    border-radius: 20.5px;
+    color: var(--white);
+}
+header nav button:hover {
+    padding: 5px 20px;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+main {
+    display: flex;
+    margin: 50px 40px;
+}
+main figure img {
+    width: 568px;
+    height: 500px;
+    margin-left: 80px;
+}
+main section {
+    margin: auto;
+}
+main section h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 100px;
+    color: var(--gray-three);
+}
+main section h2 {
+    font-weight: 500;
+    font-size: 58px;
+    color: var(--gray-three);
+}
+main section p {
+    margin-top: 20px;
+    width: 515px;
+    font-weight: 400;
+    font-size: 24px;
+}
+main section button {
+    background-color: var(--green);
+    border-radius: 20.5px;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    text-transform: uppercase;
+}
+main section button:hover {
+    cursor: pointer;
+    padding: 10px 45px;
+    transition-duration: 0.3s;
+}
+@media screen and (max-width: 390px) {
+    header nav {
+        display: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+    }
+    main figure img {
+        max-width: 354px;
+        max-height: 317px;
+        margin: auto;
+    }
+    main section h1 {
+        font-size: 50px;
+    }
+    main section h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    main section p {
+        display: none;
+    }
+    main section button {
+        width: 239px;
+        height: 64px;
+        padding: 0;
+    }
+}
