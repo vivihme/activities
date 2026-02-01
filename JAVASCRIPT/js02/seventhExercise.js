@@ -1,3 +1,8 @@
-/* FAÇA UM PROGRAMA ONDE OS JURADOS VÃO DAR A EXPLICAÇÃO PARA CADA NOTA DADA
-SÃO PERMITIDAS NOTAS DE 0 A 10. CADA NOTA DEVE CONTER UMA MENSAGEM DIFERENTE
-*/
+/* FAÇA UM PROGRAMA ONDE LEIA UM NÚMERO E DIGA SE ELE É PAR OU ÍMPAR*/
+const prompt = require('prompt-sync')();
+let number = Number(prompt('Type a number: '));
+if (number % 2 ){
+    console.log('This number is odd');
+} else {
+    console.log('This number is even')
+}
