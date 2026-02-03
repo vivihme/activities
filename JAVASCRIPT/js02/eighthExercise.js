@@ -5,23 +5,21 @@
 - PAR E DIVISÍVEL POR 5
 */
 const prompt = require('prompt-sync')();
-let number = prompt('Type a number: ');
-let isEven = number % 2 === 0;
-let divider = 2;
+const number = prompt('Type a number: ');
 
-if (isEven) {
+if (number % 2 === 0){
     if (number % 5 === 0){
-        console.log('This number is Even and Divisible by 5')
-    } else {
-        console.log('This number is Even');
+        console.log('O número é par e divisível por 5')
+    } else{
+        console.log('O número é par e NÃO divisível por 5')
     }
 } else {
-    console.log('This number is Odd')
-}
-
-while (number % divider !== 0){
-    divider++
-}
-if (number === divider && number > 1){
-    console.log('This number is Odd and Prime')
+    for (let index = 2; index < number; index++){
+        if (number % index === 0){
+            console.log('O número é ímpar e NÃO primo')
+                break
+        } else if (index === number - 1){
+            console.log('O número é primo')
+        }
+    }
 }

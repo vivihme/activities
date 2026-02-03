@@ -7,7 +7,10 @@ signUp.name = String(prompt('Write your name: '));
 signUp.age = Number(prompt('Write your age: '));
 signUp.nationality = String(prompt('Write your nationality: '));
 
-if (signUp.nationality === 'Brazilian' || signUp.nationality === 'brazilian'){
+let isBrazilian = signUp.nationality.toLowerCase() === 'brazilian';
+
+
+if (isBrazilian){
     console.log('You are Brazilian')
 } else {
     console.log('You are not Brazilian')
